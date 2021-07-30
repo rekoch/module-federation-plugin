@@ -6,11 +6,11 @@ const share = mf.share;
 const sharedMappings = new mf.SharedMappings();
 sharedMappings.register(
   path.join(__dirname, 'tsconfig.json'),
-  ['educapeLib']);
+  []);
 
 module.exports = {
   output: {
-    uniqueName: "educapePlugin",
+    uniqueName: "microThree",
     publicPath: "auto"
   },
   optimization: {
@@ -23,10 +23,10 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "plugin",
+      name: "microThree",
       filename: "remoteEntry.js",
       exposes: {
-        './Module': './/src/app/plugin-home/home.module.ts',
+        './Module': './/src/app/home/home.module.ts',
       },
 
 

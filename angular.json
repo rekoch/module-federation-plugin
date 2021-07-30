@@ -104,7 +104,7 @@
           "defaultConfiguration": "development",
           "options": {
             "extraWebpackConfig": "webpack.config.js",
-            "port": 4203
+            "port": 4202
           }
         },
         "extract-i18n": {
